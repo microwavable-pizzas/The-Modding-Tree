@@ -73,3 +73,10 @@ function achievementEffect(layer, id) {
 function gridEffect(layer, id) {
 	return (gridRun(layer, 'getEffect', player[layer].grid[id], id))
 }
+function colorText(text, color) {
+	return `<h2 style="color:${color};text-shadow:${color} 0px 0px 10px;">${text}</h2>`
+}
+
+function buyableCost(layer, id) {
+	return (tmp[layer].buyables[id].cost)
+}

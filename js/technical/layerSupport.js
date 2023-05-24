@@ -280,7 +280,14 @@ const RIGHT = 3
 
 addLayer("info-tab", {
     tabFormat: ["info-tab"],
-    row: "otherside"
+    row: "otherside",
+    hotkeys: [
+        {
+            key: "-",
+            description: "-: Show formulas",
+            onPress() {player.nerd = !player.nerd}
+        }
+    ]
 })
 
 addLayer("options-tab", {
